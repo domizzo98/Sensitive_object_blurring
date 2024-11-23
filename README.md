@@ -56,7 +56,7 @@ The fine-tuned Mask R-CNN delivered robust performance:
 
 [6] Ronneberger, O., Fischer, P., & Brox, T. (2015). U-net: Convolutional networks for biomedical image segmentation. In Medical Image Computing and Computer-Assisted Intervention–MICCAI 2015: 18th International Conference, Munich, Germany, October 5-9, 2015, Proceedings, Part III 18 (pp. 234-241). Springer International Publishing.
 
-[7] AIMeta.Detectron2.https://ai.meta.com/tools/detectron2/
+[7] AIMeta.Detectron2. https://ai.meta.com/tools/detectron2/
 
-[8] Roboflow.WhiteboardDetection.https://universe.roboflow.com/biit/whiteboard-detection
+[8] Roboflow.WhiteboardDetection. https://universe.roboflow.com/biit/whiteboard-detection
 

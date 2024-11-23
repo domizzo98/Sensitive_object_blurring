@@ -18,7 +18,7 @@ We approached the problem with three models to balance complexity, performance, 
 
 - Fine-Tuned Mask R-CNN with Detectron2: To achieve our target, we fine-tuned a pre-trained Mask R-CNN using the Detectron2 framework. We augmented the dataset with flipped images and included an additional sensitive class (whiteboards). This model reached an average precision (AP50) of ~77% and demonstrated high accuracy in blurring sensitive objects.
 
-## Key Features
+### Key Features
 
 - Custom Dataset: Images of sensitive objects sourced and annotated from COCO and RoboFlow datasets.
 
@@ -26,7 +26,7 @@ We approached the problem with three models to balance complexity, performance, 
 
 - Augmentation: Dataset augmented with flipped and additional class examples for better generalization.
 
-## Results
+### Results
 
 The fine-tuned Mask R-CNN delivered robust performance:
 

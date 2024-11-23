@@ -12,46 +12,33 @@ Data protection policies often require sensitive objects, such as screens or whi
 
 We approached the problem with three models to balance complexity, performance, and practical application:
 
-Custom Mask R-CNN Implementation: We initially built a Mask R-CNN from scratch, starting with a Region Proposal Network (RPN) using MobileNetV2 as the backbone. However, due to dataset limitations and challenges in convergence, we pivoted from this approach.
+- Custom Mask R-CNN Implementation: We initially built a Mask R-CNN from scratch, starting with a Region Proposal Network (RPN) using MobileNetV2 as the backbone. However, due to dataset limitations and challenges in convergence, we pivoted from this approach.
 
-U-Net for Semantic Segmentation: We implemented a U-Net for semantic segmentation as an intermediate step. While it generated promising masks and visual results, it lacked the flexibility to distinguish instances within the same class, limiting user control.
+- U-Net for Semantic Segmentation: We implemented a U-Net for semantic segmentation as an intermediate step. While it generated promising masks and visual results, it lacked the flexibility to distinguish instances within the same class, limiting user control.
 
-Fine-Tuned Mask R-CNN with Detectron2: To achieve our target, we fine-tuned a pre-trained Mask R-CNN using the Detectron2 framework. We augmented the dataset with flipped images and included an additional sensitive class (whiteboards). This model reached an average precision (AP50) of ~77% and demonstrated high accuracy in blurring sensitive objects.
+- Fine-Tuned Mask R-CNN with Detectron2: To achieve our target, we fine-tuned a pre-trained Mask R-CNN using the Detectron2 framework. We augmented the dataset with flipped images and included an additional sensitive class (whiteboards). This model reached an average precision (AP50) of ~77% and demonstrated high accuracy in blurring sensitive objects.
 
-Key Features
+## Key Features
 
-Custom Dataset: Images of sensitive objects sourced and annotated from COCO and RoboFlow datasets.
+- Custom Dataset: Images of sensitive objects sourced and annotated from COCO and RoboFlow datasets.
 
-Flexible Blurring: Users can selectively blur detected objects, blending original and blurred image layers using Gaussian filters.
+- Flexible Blurring: Users can selectively blur detected objects, blending original and blurred image layers using Gaussian filters.
 
-Augmentation: Dataset augmented with flipped and additional class examples for better generalization.
+- Augmentation: Dataset augmented with flipped and additional class examples for better generalization.
 
-Results
+## Results
 
 The fine-tuned Mask R-CNN delivered robust performance:
 
-Average Precision (AP50): 77%
+- Average Precision (AP50): 77%
 
-Average Recall (AR, large): 74%
+- Average Recall (AR, large): 74%
 
-Blurring Output: Precise masking and blurring with clear instance differentiation.
+## Future Work
 
-Lessons Learned
+- Expand the custom dataset to include more sensitive labels and diverse contexts.
 
-Custom Implementation Challenges: Small datasets and limited annotations hinder the convergence of custom-built RPNs.
+- Optimize model inference speed and memory requirements for real-world deployment.
 
-Semantic vs. Instance Segmentation: U-Net’s semantic segmentation is simpler but lacks instance-level flexibility.
+- Explore lightweight architectures for mobile and edge-device compatibility.
 
-Transfer Learning Power: Fine-tuning pre-trained models significantly accelerates development and improves accuracy.
-
-Future Work
-
-Expand the custom dataset to include more sensitive labels and diverse contexts.
-
-Optimize model inference speed and memory requirements for real-world deployment.
-
-Explore lightweight architectures for mobile and edge-device compatibility.
-
-Conclusion
-
-This project highlights the practical application of image segmentation for securing sensitive data in images. By leveraging pre-trained models and enhancing datasets, we achieved a functional, adaptable, and accurate solution to a real-world problem.

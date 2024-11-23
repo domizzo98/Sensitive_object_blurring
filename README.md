@@ -45,11 +45,18 @@ The fine-tuned Mask R-CNN delivered robust performance:
 ## References
 
 [1] Chen, L. C., Hermans, A., Papandreou, G., Schroff, F., Wang, P., & Adam, H. (2018). Masklab: Instance segmentation by refining object detection with semantic and direction features. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 4013-4022).
+
 [2] He, K., Gkioxari, G., Dollár, P., & Girshick, R. (2017). Mask r-cnn. In Proceedings of the IEEE international conference on computer vision (pp. 2961-2969).
+
 [3] Girshick, R. (2015). Fast r-cnn. In Proceedings of the IEEE international conference on computer vision (pp. 1440-1448).
+
 [4] Ren,S.,He,K.,Girshick,R.,&Sun,J.(2015).Fasterr-cnn:Towardsreal-timeobjectdetectionwith region proposal networks. Advances in neural information processing systems, 28.
+
 [5] Lin, T. Y., Maire, M., Belongie, S., Hays, J., Perona, P., Ramanan, D., ... & Zitnick, C. L. (2014). Microsoft coco: Common objects in context. In Computer Vision–ECCV 2014: 13th European Conference, Zurich, Switzerland, September 6-12, 2014, Proceedings, Part V 13 (pp. 740-755). Springer International Publishing.
+
 [6] Ronneberger, O., Fischer, P., & Brox, T. (2015). U-net: Convolutional networks for biomedical image segmentation. In Medical Image Computing and Computer-Assisted Intervention–MICCAI 2015: 18th International Conference, Munich, Germany, October 5-9, 2015, Proceedings, Part III 18 (pp. 234-241). Springer International Publishing.
+
 [7] AIMeta.Detectron2.https://ai.meta.com/tools/detectron2/
+
 [8] Roboflow.WhiteboardDetection.https://universe.roboflow.com/biit/whiteboard-detection
 

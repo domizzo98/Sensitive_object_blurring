@@ -4,11 +4,11 @@
 
 This project focuses on detecting and blurring sensitive objects (e.g., monitors, laptops, whiteboards) in images from office settings using instance segmentation. We explored implementing and fine-tuning a Mask R-CNN model, combining both low-level architecture building and high-level application leveraging state-of-the-art frameworks.
 
-## Problem
+### Problem
 
 Data protection policies often require sensitive objects, such as screens or whiteboards, to be hidden in shared office images. Our goal was to create a tool to automate this task, identifying sensitive objects and blurring them while maintaining flexibility for users to customize which objects are blurred. This functionality can be extended for corporate or individual use in securing visual data.
 
-### Approach
+## Approach
 
 We approached the problem with three models to balance complexity, performance, and practical application:
 
